@@ -1,3 +1,3 @@
 #! /bin/bash
 
-tmux new-session -d python3 picam.py
+python3 /picam-octoprint-startup/picam.py
