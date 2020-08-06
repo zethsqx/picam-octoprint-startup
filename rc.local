@@ -19,7 +19,7 @@ fi
 
 rm -rf /picam-octoprint-startup
 git clone https://github.com/zethsqx/picam-octoprint-startup.git
-python3 /picam-octoprint-startup/picam.py &
+bash /picam-octoprint-startup/startup.sh
 
 exit 0
 
