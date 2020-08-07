@@ -21,6 +21,8 @@ For non IR camera, set the following value in /boot/config.txt
 
     awb_auto_is_greyworld=1  
   
-Image before setting 
+Image before setting  
+<img src="image/before.png" width="25%">  
 
 Image after setting  
+<img src="image/after.png" width="25%">  
