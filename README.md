@@ -17,12 +17,19 @@ Setup
 
 IMPORTANT  
 ======  
-For non IR camera, set the following value in /boot/config.txt  
+1) For non IR camera, set the following value in /boot/config.txt  
 
-    awb_auto_is_greyworld=1  
+        awb_auto_is_greyworld=1  
   
 Image before setting  
 <img src="image/before.png" width="25%">  
 
 Image after setting  
 <img src="image/after.png" width="25%">  
+
+2) Play around with the camera settings in picam.py  
+   For the git example, the following was set to reduce bright spot from direct window lighting  
+   
+       exposure_mode = 'snow'
+  
+    
