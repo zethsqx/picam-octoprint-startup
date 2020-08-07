@@ -2,6 +2,7 @@ import io
 import picamera
 import logging
 import socketserver
+import time
 from datetime import datetime, timedelta
 from threading import Condition
 from http import server
@@ -94,6 +95,10 @@ with picamera.PiCamera(resolution='640x480', framerate=24) as camera:
     output = StreamingOutput()
     #Uncomment the next line to change your Pi's Camera rotation (in degrees)
     camera.rotation = 180
+    camera.exposure_mode = 'snow'
+#    camera.contrast = 30
+#    camera.brightness = 40
+    time.sleep(2)
     camera.start_recording(output, format='mjpeg')
     try:
         address = ('', 8000)
