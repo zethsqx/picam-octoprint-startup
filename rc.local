@@ -17,9 +17,9 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-rm -rf /picam-octoprint-startup
+rm -rf picam-octoprint-startup
 git clone https://github.com/zethsqx/picam-octoprint-startup.git
-bash /picam-octoprint-startup/startup.sh
+bash picam-octoprint-startup/startup.sh
 
 exit 0
 
