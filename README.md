@@ -13,6 +13,7 @@ Prerequisite
 ======  
 1) Git ``` sudo apt install git -y ```
 2) Python3 PiCam ``` sudo apt install python3-picamera ```
+3) Enable Pi Cam ``` sudo raspi-config ```
 
 Setup  
 ======  
