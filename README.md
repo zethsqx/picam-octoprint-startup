@@ -9,10 +9,15 @@ Files
 2) rc.local - Example of the code that should be insert in rc.local  
 3) startup.sh - Contain the startup command. Comment out line to prevent boot on startup/reboot  
 
+Prerequisite  
+======  
+1) Git ``` sudo apt install git -y ```
+2) Python3 PiCam ``` sudo apt install python3-picamera ```
+
 Setup  
 ======  
 1) Ensure /etc/rc.local contains code to delete git folder, git clone and startup script  
-2) Run ***bash /etc/rc.local*** to test  
+2) Run ```bash /etc/rc.local``` to test  
 3) Reboot once ready  
 
 IMPORTANT  
