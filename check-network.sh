@@ -5,7 +5,7 @@
 #fi
 
 # Check wifi connection...
-ping www.google.com -I wlan0 -c4
+ping 8.8.8.8 -I wlan0 -c4
 # '$?' is the exit code of previous ping command
 if [ $? != 0 ] #  => failure
 then
