@@ -102,6 +102,10 @@ with picamera.PiCamera(resolution='640x480', framerate=24) as camera:
     try:
         address = ('', 8000)
         server = StreamingServer(address, StreamingHandler)
+        server.socket = ssl.wrap_socket(server.socket, 
+                 certfile='../cert.pem', 
+                 keyfile='../key.pem', 
+                 server_side=True)
         server.serve_forever()
     finally:
         camera.stop_recording()
