@@ -104,8 +104,8 @@ with picamera.PiCamera(resolution='640x480', framerate=24) as camera:
         address = ('', 8000)
         server = StreamingServer(address, StreamingHandler)
         server.socket = ssl.wrap_socket(server.socket, 
-                 certfile='../cert.pem', 
-                 keyfile='../key.pem', 
+                 certfile='/root/cert.pem', 
+                 keyfile='/root/key.pem', 
                  server_side=True)
         server.serve_forever()
     finally:
