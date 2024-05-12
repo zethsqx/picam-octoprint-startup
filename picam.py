@@ -2,6 +2,7 @@ import io
 import picamera
 import logging
 import socketserver
+import ssl
 import time
 from datetime import datetime, timedelta
 from threading import Condition
